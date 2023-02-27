@@ -1,0 +1,141 @@
+body{
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    font-size: 26px;
+    font-weight: 200;
+    letter-spacing: 2.5px;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.chat,.floatingBtn{
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+}
+.floatingBtn{
+    background: linear-gradient(-45deg, #55ccff, #4de3de);
+    padding: 15px;
+    border-radius: 50px;
+    color: white;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.chat{
+    border: 1px solid #eee;
+    height: 550px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.15) 5px 5px 15px 5px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-size: 21px;
+    background: linear-gradient(-45deg, #2c76f6, #45c7ff);
+    color: white;
+}
+.header img{
+    filter: brightness(100);
+}
+.body{
+    overflow-y: scroll;
+}
+.body .agent{
+    border-bottom: 1px solid #d9d9d9;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    position: relative;
+    user-select: none;
+    cursor: pointer;
+}
+.body .agent:hover{
+    background-color: #4d95e325;
+}
+.body .agent .photo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.body .agent .photo img{
+    border-radius: 50px;
+    margin: auto;
+}
+.body .agent .content{
+    padding-left: 20px;
+    flex: 80%;
+}
+.body .agent .name{
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 21px;
+}
+.body .agent .sector{
+    font-size: 14px;
+    color: rgb(159, 159, 159);
+}
+.body .agent .status{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50px;
+}
+.body .agent .status.active{
+    background-color: green;
+}
+.body .agent .status.inactive{
+    background-color: red;
+}
+.body .chatActive{
+    padding: 20px 10px;
+}
+.body .message{
+    width: 70%;
+    font-size: 18px;
+    border-radius: 10px;
+    padding: 10px 15px;
+    margin: 10px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    border: none;
+    position: relative;
+}
+.body .message.user{
+    margin-left: auto;
+    background-color: #eee;
+}
+.body .message.agent{
+    background: linear-gradient(45deg, #2c76f6, #45c7ff);
+    color: white;
+}
+.body .message.agent:before{
+    content: '';
+    border: 15px transparent solid;
+    border-top: 15px solid #2c76f6;
+    position: absolute;
+    bottom: -27.5px;
+    left: 10px;
+    z-index: 1;
+}
+.body .message.user:before{
+    content: '';
+    border: 15px transparent solid;
+    border-top: 15px solid #eee;
+    position: absolute;
+    bottom: -27.5px;
+    right: 10px;
+    z-index: 1;
+}

@@ -1,0 +1,20 @@
+[
+    {
+        "id": "AG-001",
+        "name": "Cristopher Stand",
+        "sector": "IT Support",
+        "img": "/img/"
+    },
+    {
+        "id": "AG-002",
+        "name": "Samantha Nicolas",
+        "sector": "Marketing Manager",
+        "img": "/img/"
+    },
+    {
+        "id": "AG-003",
+        "name": "Richard Smith",
+        "sector": "Software Development",
+        "img": "/img/"
+    }
+]
